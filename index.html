@@ -88,6 +88,36 @@
       color: #38bdf8;
     }
 
+    @media (max-width: 768px) {
+      .site-name {
+        display: none;
+      }
+
+      .logo img {
+        width: 10px;
+        height: 10px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      .nav-container {
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .logo img {
+        width: 45px;
+        height: 45px;
+      }
+    }
+
     /* HERO */
     header {
       min-height: 100vh;
@@ -265,7 +295,7 @@
     <div class="nav-container">
       <div class="logo">
         <img src="images/logo.png" alt="Logo">
-        <span>dureeyyy</span>
+        <span class="site-name">dureeyyy</span>
       </div>
 
       <div class="nav-links">
@@ -345,6 +375,28 @@
       <h2 class="section-title">Projects</h2>
 
       <div class="projects-grid">
+
+      <!-- PROJECT 4 -->
+        <div class="project-card">
+
+          <img src="images/Automated Email Classifier.png" alt="Project Image">
+
+          <div class="project-content">
+            <h3>Automated Email Classifier</h3>
+
+            <p>
+              Developed a Power Automate workflow that uses agentic AI to automatically classify emails and store their attachments in organized folders based on identified categories.
+            </p>
+
+            <div class="project-links">
+
+              <a href="https://github.com/dureeyyy/Automated-Email-Classifier" target="_blank">
+                GitHub
+              </a>
+            </div>
+          </div>
+
+        </div>
 
       <!-- PROJECT 3 -->
         <div class="project-card">
